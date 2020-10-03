@@ -7,6 +7,7 @@ private:
     int acno;
     char name[30];
     long balance;
+    char branch[50];
 
 public:
     void OpenAccount()
@@ -17,12 +18,15 @@ public:
         cin >> name;
         cout << "Enter  Balance: ";
         cin >> balance;
+        cout<<"Enter Branch name:";
+        cin>>branch;
     }
     void ShowAccount()
     {
         cout << "Account Number: " << acno << endl;
         cout << "Name: " << name << endl;
         cout << "Balance: " << balance << endl;
+        cout<<"Branch name:"<<branch<<endl;
     }
     void Deposit()
     {
